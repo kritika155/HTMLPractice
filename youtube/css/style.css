@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header {
+  background-color: #ff0000; /* YouTube red color */
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#sidebar {
+  width: 0;
+  background-color: #333;
+  color: white;
+  transition: width 0.3s;
+}
+
+#content {
+  flex: 1;
+  padding: 20px;
+}
+
+#sidebarToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+#sidebar.open {
+  width: 250px; /* Adjust to your desired width */
+}
